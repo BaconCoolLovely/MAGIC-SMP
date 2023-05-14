@@ -14,23 +14,33 @@ on:
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
+jobs: mod
   # This workflow contains a single job called "build"
-  build:
+  build:houses and farms
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: minecraft.app.net
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+    steps: run hide build fight
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: minecraft.net
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Minecraft Geyser
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+
           echo Add other actions to build,
           echo test, and deploy your project.
+- name: Cache
+  uses: actions/cache@v1.2.1
+  with:
+    # A directory to store and save the cache
+    path: 
+    # An explicit key for restoring and saving the cache
+    key: 
+    # An ordered list of keys to use for restoring the cache if no cache hit occurred for key
+    restore-keys: # optional
